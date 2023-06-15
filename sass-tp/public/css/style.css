@@ -1,3 +1,9 @@
+h4, h3, h2 {
+  font-size: 45px;
+  text-align: center;
+  padding: 12px 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,19 +15,23 @@ body {
   padding: 10px;
 }
 
+.btn {
+  padding: 10px 30px;
+  background-color: red;
+  border-radius: 5px;
+}
+
 .container {
-  background: #00308f;
+  background: #6883be;
   color: #f1f1f1;
   padding: 40px;
   border-radius: 5px;
   max-width: 900px;
   margin: 20px auto 0;
 }
-
 .container h1 {
   font-size: 40px;
 }
-
 .container button {
   padding: 10px 15px;
   margin-top: 20px;
@@ -30,7 +40,6 @@ body {
   font-size: 18px;
   cursor: pointer;
 }
-
 .container button:hover {
   background: lightblue;
   color: #f1f1f1;
@@ -49,7 +58,7 @@ h4 {
 }
 
 .inp-large {
-  display: block;
+  @inc display: block;
   padding: 24px;
   font-size: 20px;
   width: 100%;

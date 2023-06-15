@@ -1,44 +1,16 @@
 // Rangez dans chaque fichier partial le code associé
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import './utils/variables';
+@import './utils/placeholders';
+@import './base/reset';
+@import './base/default';
+@import './components/button';
+@import './page/home.scss';
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-}
 
 // 1. Créer une palette de 5 variables qui représentent des nuances de bleu en hexadécimal
 // Et utiliser une des couleur dans le code ci-dessous
 
 // 2. Utilisez le "nesting" de SASS afin d'imbriquer les sélecteurs suivants
-.container {
-    background: #00308f;
-    color: #f1f1f1;
-    padding: 40px;
-    border-radius: 5px;
-    max-width: 900px;
-    margin: 20px auto 0;
-}
-
-.container h1 {
-    font-size: 40px;
-}
-
-.container button {
-    padding: 10px 15px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-}
-.container button:hover {
-    background: lightblue;
-    color: #f1f1f1;
-}
 
 // 3. Partagez les trois propriétés suivantes avec les h2, h3 & h4.
 // Le résultat dans le style.css devrait ressembler à ceci :
@@ -50,33 +22,26 @@ body {
 
 h2 {
     color: crimson;
+    @extend %subtitle;
 }
 h3 {
     color: lightgreen;
+    @extend %subtitle;
 }
 h4 {
     color: lightblue;
+    @extend %subtitle;
 }
 
 // 4. Créez un mixin avec des paramètres pour éviter les répétitions.
 // Les sélecteurs ne doivent pas avoir de propriétés propres, tout doit être compris dans le mixin et ses paramètres.
 
 .inp-large {
-    display: block;
-    padding: 24px;
-    font-size: 20px;
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto;
+    @include input(block, 24px, 20px,100%, 800px, 50px auto);
 }
 
 .inp-small {
-    display: block;
-    padding: 16px;
-    font-size: 14px;
-    width: 100%;
-    max-width: 250px;
-    margin: 50px auto;
+    @include input(block, 16px, 14px,100%, 250px, 50px auto);
 }
 
 // 5. Utilisez une boucle pour ajouter 1px de hauteur et de largeur aux 100 blocks de manière incrémentale (b1,b2,b3 etc ...).
