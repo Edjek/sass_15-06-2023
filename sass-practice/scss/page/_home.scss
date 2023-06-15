@@ -1,0 +1,43 @@
+.title {
+    @include title(#fff, 30px, 2.5em);
+}
+
+.subtitle {
+    @include title(#fff, 50px, 1.5em);
+}
+
+.title-border {
+    width: $width;
+    margin: $margin;
+    border: $border;
+}
+.list-ingredient {
+    margin-bottom: 30px;
+    padding: $padding;
+    @extend %list;
+}
+
+.list-etape {
+    @extend %list;
+    border: $border;
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    .first-list-etape {
+        font-weight: bold;
+        strong {
+            font-style: italic;
+        }
+    }
+}
+
+.p-1 {
+    background-color: $main-color;
+    padding: $padding;
+}
+
+.p-2 {
+    background-color: $main-color-dark;
+    padding: $padding; 
+}
+

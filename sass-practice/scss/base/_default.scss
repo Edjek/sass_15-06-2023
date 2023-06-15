@@ -1,0 +1,19 @@
+body {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    background-color: blue;
+}
+
+h2 {
+    margin: $margin;
+    width: $width;
+    background-color: $bg-color;
+    @extend %title;
+}
+
+h3 {
+    @extend %title;
+}

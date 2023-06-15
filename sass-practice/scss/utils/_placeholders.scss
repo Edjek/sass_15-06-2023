@@ -1,0 +1,13 @@
+// les placeholders permettent d'insérer des bouts de code que l'on souhaite répéter
+%title {
+    padding: $padding;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+%list {
+    background-color: $bg-color;
+    list-style: none;
+    font-size: 14px;
+    color: #555;
+}

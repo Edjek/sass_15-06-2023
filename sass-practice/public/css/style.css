@@ -1,0 +1,79 @@
+h3, h2 {
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list-etape, .list-ingredient {
+  background-color: rgb(144, 144, 144);
+  list-style: none;
+  font-size: 14px;
+  color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  background-color: blue;
+}
+
+h2 {
+  margin: 50px auto;
+  width: 600px;
+  background-color: rgb(144, 144, 144);
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+.title-border {
+  width: 600px;
+  margin: 50px auto;
+  border: 1px solid #000;
+}
+
+.list-ingredient {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.list-etape {
+  border: 1px solid #000;
+  margin: 50px auto;
+  padding: 20px;
+  width: 600px;
+}
+.list-etape .first-list-etape {
+  font-weight: bold;
+}
+.list-etape .first-list-etape strong {
+  font-style: italic;
+}
+
+.p-1 {
+  background-color: rgb(72, 127, 182);
+  padding: 20px;
+}
+
+.p-2 {
+  background-color: #3a6691;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
